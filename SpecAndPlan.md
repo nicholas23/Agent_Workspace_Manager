@@ -308,12 +308,12 @@ AI Agent 必須在執行完成後,透過 STDOUT 輸出以下 JSON 格式:
 
 ### 9.2 透過 Telegram 查看 Project 列表
 **As a** 用戶  
-**I want to** 在 Telegram 輸入 `pp1`, `pp2` 查看 Project  
+**I want to** 在 Telegram 輸入 `/pp 1`, `/pp 2` 查看 Project  
 **So that** 我可以快速瀏覽所有專案
 
 **Acceptance Criteria:**
-- `pp1` 顯示第 1-10 筆
-- `pp2` 顯示第 11-20 筆
+- `/pp 1` 顯示第 1-10 筆
+- `/pp 2` 顯示第 11-20 筆
 - 顯示內容包含名稱、描述、建立日期
 - 按建立日期排序
 
@@ -321,7 +321,7 @@ AI Agent 必須在執行完成後,透過 STDOUT 輸出以下 JSON 格式:
 
 ### 9.3 透過 Telegram 下達執行指令
 **As a** 用戶  
-**I want to** 在 Telegram 輸入 `project_name 執行指令`  
+**I want to** 在 Telegram 輸入 `/run project_name 執行指令`  
 **So that** 我可以遠端觸發 AI Agent 執行任務
 
 **Acceptance Criteria:**
@@ -635,10 +635,10 @@ ai-agent-manager/
 - 建立 Update Loop (Goroutine)
 
 #### 2.2 Telegram 指令實作
-- 實作 `help`
-- 實作 `pp1`, `pp2`
+- 實作 `/help`
+- 實作 `/pp 1`, `/pp 2`
 - 實作 `/status`
-- 實作 `project_name 指令` 觸發器
+- 實作 `/run project_name 指令` 觸發器
   - 呼叫 Executor Service
 - 回覆確認訊息
 
