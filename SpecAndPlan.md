@@ -50,8 +50,8 @@
 
 #### 3.2.1 查看 Project 列表
 ```
-pp1  # 顯示第 1-10 筆 Project
-pp2  # 顯示第 11-20 筆 Project
+/pp 1  # 顯示第 1-10 筆 Project
+/pp 2  # 顯示第 11-20 筆 Project
 ```
 顯示內容:
 - Project 名稱
@@ -61,9 +61,9 @@ pp2  # 顯示第 11-20 筆 Project
 
 #### 3.2.2 下達執行指令
 ```
-project_name 要執行的動作
+/run project_name 要執行的動作
 ```
-範例: `project_name_1 分析最新的 CSV 檔案`
+範例: `/run project_name_1 分析最新的 CSV 檔案`
 
 #### 3.2.3 查詢執行狀態
 ```
@@ -552,7 +552,7 @@ ai-agent-manager/
 
 ## 11. 實作計劃
 
-### 11.1 Phase 1: 核心功能 (Week 1-2)
+### 11.1 Phase 1: 核心功能
 
 #### 1.1 環境建置
 - 建立專案目錄結構
@@ -626,7 +626,7 @@ ai-agent-manager/
 
 ---
 
-### 11.2 Phase 2: Telegram 整合 (Week 3)
+### 11.2 Phase 2: Telegram 整合
 
 #### 2.1 Telegram Bot 基礎
 - 初始化 `telegram-bot-api`
@@ -657,7 +657,7 @@ ai-agent-manager/
 
 ---
 
-### 11.3 Phase 3: Web 管理介面 (Week 4-5)
+### 11.3 Phase 3: Web 管理介面
 
 #### 3.1 前端環境建置
 - 建立 Vue 3 專案 (Vite)
@@ -682,7 +682,7 @@ ai-agent-manager/
 
 ---
 
-### 11.4 Phase 4: 排程功能 (Week 6)
+### 11.4 Phase 4: 排程功能
 
 #### 4.1 排程管理 API
 - 實作 Schedule CRUD API
@@ -705,7 +705,7 @@ ai-agent-manager/
 
 ---
 
-### 11.5 Phase 5: 測試與優化 (Week 7)
+### 11.5 Phase 5: 測試與優化
 
 #### 5.1 整合測試
 - 端到端測試 (End-to-End)
