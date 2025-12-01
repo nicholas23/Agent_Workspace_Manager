@@ -1,0 +1,26 @@
+# Binaries
+/bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+
+# Dependency directories (if using vendor)
+vendor/
+
+# Environment variables
+.env
+
+# Logs
+/logs/
+*.log
+
+# SQLite database
+data/app.db
